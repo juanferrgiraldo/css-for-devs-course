@@ -1,0 +1,30 @@
+p {
+  text-align: justify;
+  max-width: 300px;
+}
+
+.tooltip {
+  display: none;
+  background: white;
+  color: black;
+  border: 1px solid;
+  top: 1.2rem;
+  left: 0px;
+  min-width: 150px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  padding: 8px;
+  position: absolute;
+}
+
+.tooltipTrigger {
+  text-decoration: none;
+  color: seagreen;
+  font-weight: bold;
+  position: relative;
+  display: inline-block; /*without this property could lead to 'weird' behaviors when the trigger text is long*/
+}
+
+.tooltipTrigger:hover .tooltip {
+  display: block;
+}
